@@ -8,7 +8,9 @@
   <![endif]-->
 
   {{> yield region="header"}}
-  {{> yield region="navbar"}}
+  {{#if currentUser}}
+    {{> yield region="navbar"}}
+  {{/if}}
   <div class="container-fluid">
     {{> yield}}
   </div>
