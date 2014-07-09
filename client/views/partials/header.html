@@ -1,0 +1,14 @@
+<template name="header">
+  <header class="titlebar">
+    <span class="sidebar-button">
+      <img src="/images/sidebar-button-32.png" alt="sidebar">
+    </span>
+    <div class="title"><h1>Wizdom</h1></div>
+    {{#unless currentUser}}
+      <span class="accounts">
+        {{> accountButtons}}
+      </span>
+    {{/unless}}
+  </header>
+</template>
+

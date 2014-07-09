@@ -8,6 +8,9 @@
   <![endif]-->
 
   {{> yield region="header"}}
-  {{> yield}}
+  {{> yield region="navbar"}}
+  <div class="container-fluid">
+    {{> yield}}
+  </div>
   {{> yield region="footer"}}
 </template>

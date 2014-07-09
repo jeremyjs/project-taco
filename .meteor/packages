@@ -10,3 +10,9 @@ coffeescript
 iron-router
 sass
 bootstrap3-sass
+fontawesome4
+accounts-password
+accounts-facebook
+accounts-google
+accounts-twitter
+accounts-entry

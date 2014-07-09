@@ -2,6 +2,8 @@
   "packages": {
     "iron-router": {},
     "sass": {},
-    "bootstrap3-sass": {}
+    "bootstrap3-sass": {},
+    "fontawesome4": {},
+    "accounts-entry": {}
   }
 }

@@ -6,5 +6,7 @@ Router.configure
       to: 'header'
     footer:
       to: 'footer'
+    navbar:
+      to: 'navbar'
   onBeforeAction: ->
     $('meta[name^="description"]').remove()
