@@ -4,7 +4,8 @@
     "basePackages": {
       "iron-router": {},
       "bootstrap3-sass": {},
-      "fontawesome4": {}
+      "fontawesome4": {},
+      "sass": {}
     },
     "packages": {
       "iron-router": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/chrismbeckett/meteor-fontawesome4.git",
         "tag": "v1.1.0",
         "commit": "7d2cb9119b7981b8f854b7051d302d4842311249"
+      },
+      "sass": {
+        "git": "https://github.com/particle4dev/meteor-sass.git",
+        "tag": "v0.1.4",
+        "commit": "7f43b08e9726c953bbbda5974d09cfca89f45086"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
