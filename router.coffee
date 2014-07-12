@@ -10,6 +10,8 @@ Router.map ->
         to: false
       navbar:
         to: false
+      sidebar:
+        to: false
 
   @route 'signup'
 

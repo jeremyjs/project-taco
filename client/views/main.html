@@ -5,10 +5,14 @@
 <template name="layout">
   {{#if currentUser}}
     {{> yield region="header"}}
-    {{> yield region="navbar"}}
   {{/if}}
-  <div class="container-fluid">
-    {{> yield}}
+  <div class="page-wrapper">
+    {{#if sidebar}}
+      {{> yield region="sidebar"}}
+    {{/if}}
+    <div class="container-fluid">
+      {{> yield}}
+    </div>
   </div>
   {{> yield region="footer"}}
 </template>

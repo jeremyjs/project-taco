@@ -9,3 +9,8 @@
 @user = ->
   @userEmail().replace /@.*/, ""
 
+@toggleSession = (variable) ->
+  if Session.get variable
+    Session.set variable, false
+  else
+    Session.set variable, true

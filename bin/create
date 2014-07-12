@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $1 -eq "view" ];
+then
+  echo "creating view"
+fi
+

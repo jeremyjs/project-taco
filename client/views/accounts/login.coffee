@@ -7,6 +7,7 @@ accountError = (params) ->
     Router.go '/feed'
 
 createOrLogin = (action = "login") ->
+  event.preventDefault()
   email = $('#login-email').val()
   password = $('#login-password').val()
 
@@ -31,4 +32,7 @@ Template.login.events
 
   'click #signup-button': ->
     createOrLogin "create"
+
+  'submit form': ->
+    createOrLogin "login"
 
