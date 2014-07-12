@@ -8,10 +8,7 @@ autopublish
 insecure
 coffeescript
 iron-router
-sass
 bootstrap3-sass
 fontawesome4
 accounts-password
-accounts-google
-accounts-entry
 accounts-ui

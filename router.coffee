@@ -1,8 +1,18 @@
 Router.map ->
-  @route 'home',
+  @route 'root',
     path: '/'
     action: ->
-      this.redirect('/sign-in')
+      this.redirect '/login'
 
-  @route 'feed',
-    path: '/feed'
+  @route 'login',
+    yieldTemplates:
+      header:
+        to: false
+      navbar:
+        to: false
+
+  @route 'signup'
+
+  @route 'feed'
+
+  @route 'home'

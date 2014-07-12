@@ -3,21 +3,14 @@
   "dependencies": {
     "basePackages": {
       "iron-router": {},
-      "sass": {},
       "bootstrap3-sass": {},
-      "fontawesome4": {},
-      "accounts-entry": {}
+      "fontawesome4": {}
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.7.1",
         "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
-      },
-      "sass": {
-        "git": "https://github.com/particle4dev/meteor-sass.git",
-        "tag": "v0.1.4",
-        "commit": "7f43b08e9726c953bbbda5974d09cfca89f45086"
       },
       "bootstrap3-sass": {
         "git": "https://github.com/reywood/meteor-bootstrap3-sass.git",
@@ -29,11 +22,6 @@
         "tag": "v1.1.0",
         "commit": "7d2cb9119b7981b8f854b7051d302d4842311249"
       },
-      "accounts-entry": {
-        "git": "https://github.com/Differential/accounts-entry.git",
-        "tag": "v0.7.3",
-        "commit": "7facaa045d3720eeeba3420c28e48d5709188fe3"
-      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -43,11 +31,6 @@
         "git": "https://github.com/fourseven/meteor-scss.git",
         "tag": "v0.9.3",
         "commit": "185f3b2787fb85e653f7b7bf603d1493ed14943d"
-      },
-      "accounts-t9n": {
-        "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
-        "tag": "v0.0.5",
-        "commit": "ad9539a8818049d5d9fa050d8b2a1f62706483b1"
       }
     }
   }

@@ -1,3 +1,6 @@
+Template.home.helpers
+  user: @user
+
 Template.home.rendered = ->
   #SEO Page Title & Description
   document.title = "My New Meteor App"
