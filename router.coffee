@@ -1,8 +1,16 @@
+isLoggedIn = (action) ->
+  unless Meteor.loggingIn() || Meteor.user()
+    this.render 'login'
+    action()
+
+Router.onBeforeAction isLoggedIn,
+  except: ['login', 'signup']
+
 Router.map ->
   @route 'root',
     path: '/'
     action: ->
-      this.redirect '/login'
+      this.redirect '/feed'
 
   @route 'login',
     yieldTemplates:
@@ -15,6 +23,21 @@ Router.map ->
 
   @route 'signup'
 
+  @route 'home'
+
   @route 'feed'
 
-  @route 'home'
+  @route 'notifications'
+
+  @route 'assignments'
+
+  @route 'notes'
+
+  @route 'calendar'
+
+  @route 'accountSettings',
+    path: '/settings/account'
+
+  @route 'applicationSettings',
+    path: '/settings/application'
+
