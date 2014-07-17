@@ -41,3 +41,18 @@ Router.map ->
   @route 'applicationSettings',
     path: '/settings/application'
 
+  @route 'currentProfile',
+    template: 'profile'
+    path: '/profile'
+    data: ->
+      user = Meteor.user()
+      # person = Meteor.users.find id
+
+  @route 'profile',
+    template: 'profile'
+    path: '/profile/:id'
+    data: ->
+      id = this.params.id
+      user = Meteor.users.find {id: id}
+      # person = Meteor.users.find id
+
